@@ -1,9 +1,37 @@
 {
     "version": "0.1.0",
-    "command": "gulp",
+    "command": "npm",
     "isShellCommand": true,
-    "args": [
-        "--no-color"
-    ],
-    "showOutput": "always"
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "default",
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "args": [
+                "run",
+                "dev"
+            ]
+        },
+        {
+            "taskName": "install",
+            "args": [
+                "install"
+            ]
+        },
+        {
+            "taskName": "update",
+            "args": [
+                "update"
+            ]
+        },
+        {
+            "taskName": "test",
+            "args": [
+                "run",
+                "test"
+            ]
+        }
+    ]
 }
